@@ -11,6 +11,8 @@ import { Bomb } from './bomb.js';
 import { Star } from './star.js';
 import { Battery } from './battery.js';
 
+const player = new Player(new Vector(0, 0));
+
 class Game extends Engine {
     constructor() {
         super({
