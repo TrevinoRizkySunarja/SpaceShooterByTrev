@@ -1,17 +1,16 @@
 {
-  "name": "space-shooter",
+  "name": "Spaceshooter By Trev",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview"
+    "build": "vite build"
   },
   "devDependencies": {
-    "vite": "^5.2.9"
+    "vite": "^5.2.8"
   },
   "dependencies": {
-    "excalibur": "^0.29.1"
+    "excalibur": "^0.29.2"
   }
 }
