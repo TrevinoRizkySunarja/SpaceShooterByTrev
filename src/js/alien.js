@@ -7,7 +7,7 @@ export class Alien extends Actor {
     constructor(pos, game) {
         super({
             pos: pos,
-            width: 50, // Gelijke grootte als de speler
+            width: 50,
             height: 50,
             collisionType: CollisionType.Active
         });

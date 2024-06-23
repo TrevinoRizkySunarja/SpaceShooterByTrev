@@ -22,7 +22,7 @@ export class Battery extends Actor {
     onInitialize(engine) {
         this.on('collisionstart', (evt) => {
             if (evt.other instanceof Player) {
-                this.game.increaseLasers(); // Vul lasers aan tot 100
+                this.game.increaseLasers();
                 this.kill();
             }
         });

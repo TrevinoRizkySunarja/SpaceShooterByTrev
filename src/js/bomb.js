@@ -22,7 +22,7 @@ export class Bomb extends Actor {
     onInitialize(engine) {
         this.on('collisionstart', (evt) => {
             if (evt.other instanceof Player) {
-                this.game.increaseBomb(); // Assuming bomb increases bomb count
+                this.game.increaseBomb(); 
                 this.kill();
             }
         });
