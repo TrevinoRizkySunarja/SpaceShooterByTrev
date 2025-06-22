@@ -36,23 +36,22 @@ export class Player extends Actor {
             if (kb.isHeld(Input.Keys.Space) && this.laserTimer <= 0 && this.game.laserCount > 0) {
                 this.shoot();
                 this.laserTimer = 0.1;
-                this.game.laserCount--;
-                this.game.updateLaserCount(this.game.laserCount);
+                this.game.decreaseLaser();
+
             }
         } else {
             if (kb.wasPressed(Input.Keys.Space) && this.laserTimer <= 0 && this.game.laserCount > 0) {
                 this.shoot();
                 this.laserTimer = 0.1; 
-                this.game.laserCount--;
-                this.game.updateLaserCount(this.game.laserCount);
+                this.game.decreaseLaser();
+
             }
         }
 
         if (kb.isHeld(Input.Keys.E) && this.bombTimer <= 0 && this.game.bombCount > 0) {
             this.useBomb();
-            this.bombTimer = 1;
-            this.game.bombCount--;
-            this.game.updateBombCount(this.game.bombCount);
+            this.bombTimer = 1; 
+           this.game.decreaseBomb();
         }
 
         this.laserTimer -= delta / 1000;

@@ -17,7 +17,7 @@ export class Star extends Actor {
     }
 
     onPreUpdate(engine, delta) {
-        this.pos.y += delta / 1000 * 50;
+        this.vel = new Vector(0, 50);
         if (this.pos.y > engine.drawHeight) {
             this.kill();
         }
