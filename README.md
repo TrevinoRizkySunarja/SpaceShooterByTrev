@@ -2,6 +2,10 @@
 
 Arcade-style space shooter built with JavaScript, Vite and Excalibur. The player controls a UFO, dodges enemies, shoots lasers, uses bombs and collects power-ups while trying to survive as long as possible.
 
+## Live Demo
+
+Play the game here: [SpaceShooterByTrev live demo](https://trevinorizkysunarja.github.io/SpaceShooterByTrev/)
+
 ## Features
 
 - Full-screen Excalibur game canvas
